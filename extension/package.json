@@ -3,7 +3,13 @@
   "displayName": "PDE Support for VSCode Java",
   "description": "A VS Code extension that provides PDE support for Java projects.",
   "version": "0.0.1",
+  "author": "cabutchei",
   "publisher": "cabutchei",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cabutchei/pde-support-vscode-java"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -11,6 +17,8 @@
     "Other"
   ],
   "main": "./out/extension.js",
+  "activationEvents": [],
+  "extensionDependencies": ["redhat.java"],
   "contributes": {
     "javaExtensions": [
       "bundles/biz.aQute.bnd.annotation_7.1.0.jar",

@@ -16,6 +16,10 @@ found in Eclipse.
 3) Run `npm run update:java-extensions` from `extension/` to refresh `contributes.javaExtensions`.
 4) Package the extension with `npm run package`.
 
+## License
+
+MIT. See `LICENSE`.
+
 ## Notes
 
 - The extension is a runtime add-on for JDT LS and does not add UI or commands.
