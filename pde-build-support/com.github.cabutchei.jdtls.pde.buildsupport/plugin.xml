@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension
+        id="manifestTargetBuildSupport"
+        point="org.eclipse.jdt.ls.core.buildSupport">
+     <buildSupport
+           id="manifestTargetBuildSupport"
+           order="2500"
+           class="com.github.cabutchei.jdtls.pde.buildsupport.ManifestAndTargetBuildSupport"/>
+  </extension>
+</plugin>

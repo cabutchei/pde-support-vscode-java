@@ -1,7 +1,7 @@
 {
-  "name": "simple-extension",
-  "displayName": "Simple Extension",
-  "description": "A simple VS Code extension example.",
+  "name": "pde-support-vscode-java",
+  "displayName": "PDE Support for VSCode Java",
+  "description": "A VS Code extension that provides PDE support for Java projects.",
   "version": "0.0.1",
   "publisher": "cabutchei",
   "engines": {
@@ -53,7 +53,8 @@
       "bundles/org.sat4j.core_2.3.6.v20201214.jar",
       "bundles/org.sat4j.pb_2.3.6.v20201214.jar",
       "bundles/org.tukaani.xz_1.11.0.jar",
-      "bundles/slf4j.nop_1.7.36.jar"
+      "bundles/slf4j.nop_1.7.36.jar",
+      "bundles/com.github.cabutchei.jdtls.pde.buildsupport-0.1.0.alpha.jar"
     ]
   },
   "scripts": {
