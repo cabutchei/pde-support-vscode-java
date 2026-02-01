@@ -2,7 +2,7 @@
   "name": "pde-support-vscode-java",
   "displayName": "PDE Support for VSCode Java",
   "description": "A VS Code extension that provides PDE support for Java projects.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "cabutchei",
   "publisher": "cabutchei",
   "license": "MIT",
