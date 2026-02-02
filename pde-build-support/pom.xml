@@ -6,7 +6,7 @@
 
   <groupId>com.github.cabutchei</groupId>
   <artifactId>parent</artifactId>
-  <version>0.1.0.alpha</version>
+  <version>0.2.0.alpha</version>
   <packaging>pom</packaging>
 
   <name>PDE Support for VS Code Java</name>
@@ -60,7 +60,7 @@
             <artifact>
               <groupId>com.github.cabutchei</groupId>
               <artifactId>targetplatform</artifactId>
-              <version>0.1.0.alpha</version>
+              <version>0.2.0.alpha</version>
             </artifact>
           </target>
         </configuration>

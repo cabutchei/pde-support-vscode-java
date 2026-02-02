@@ -2,7 +2,7 @@
   "name": "pde-support-vscode-java",
   "displayName": "PDE Support for VSCode Java",
   "description": "A VS Code extension that provides PDE support for Java projects.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "cabutchei",
   "publisher": "cabutchei",
   "license": "MIT",
@@ -17,9 +17,17 @@
     "Other"
   ],
   "main": "./out/extension.js",
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:pdeSupport.targetDiagnostics"
+  ],
   "extensionDependencies": ["redhat.java"],
   "contributes": {
+    "commands": [
+      {
+        "command": "pdeSupport.targetDiagnostics",
+        "title": "PDE: Target Diagnostics (Reload/Stats)"
+      }
+    ],
     "javaExtensions": [
       "bundles/biz.aQute.bnd.annotation_7.1.0.jar",
       "bundles/biz.aQute.bnd.util_7.1.0.202411251545.jar",
@@ -34,12 +42,21 @@
       "bundles/org.apache.commons.codec_1.14.0.v20221112-0806.jar",
       "bundles/org.bndtools.versioncontrol.ignores.manager_7.1.0.202411251545.jar",
       "bundles/org.bndtools.versioncontrol.ignores.plugin.git_7.1.0.202411251545.jar",
+      "bundles/bcpg_1.82.0.jar",
+      "bundles/bcprov_1.82.0.jar",
+      "bundles/bcutil_1.82.0.jar",
       "bundles/org.bouncycastle.bcpg_1.72.0.v20221013-1810.jar",
       "bundles/org.bouncycastle.bcprov_1.72.0.v20221013-1810.jar",
       "bundles/org.eclipse.e4.core.contexts_1.13.200.v20250609-0437.jar",
       "bundles/org.eclipse.e4.core.di_1.9.700.v20250609-0907.jar",
       "bundles/org.eclipse.e4.core.di.annotations_1.8.400.v20240413-1529.jar",
       "bundles/org.eclipse.e4.core.services_2.5.300.v20251112-1253.jar",
+      "bundles/org.eclipse.ecf.identity_3.10.0.v20240812-1535.jar",
+      "bundles/org.eclipse.ecf_3.13.0.v20250304-2338.jar",
+      "bundles/org.eclipse.ecf.filetransfer_5.1.103.v20230705-0614.jar",
+      "bundles/org.eclipse.ecf.provider.filetransfer_3.3.100.v20250115-0406.jar",
+      "bundles/org.eclipse.ecf.provider.filetransfer.httpclientjava_2.1.1.v20250818-1641.jar",
+      "bundles/org.eclipse.equinox.concurrent_1.3.400.v20250715-0436.jar",
       "bundles/org.eclipse.equinox.p2.artifact.repository_1.5.800.v20250620-1926.jar",
       "bundles/org.eclipse.equinox.p2.core_2.13.200.v20251111-1620.jar",
       "bundles/org.eclipse.equinox.p2.director_2.6.800.v20250714-1236.jar",
@@ -52,6 +69,8 @@
       "bundles/org.eclipse.equinox.p2.publisher.eclipse_1.6.700.v20251107-1554.jar",
       "bundles/org.eclipse.equinox.p2.repository_2.9.600.v20251118-0500.jar",
       "bundles/org.eclipse.equinox.p2.repository.tools_2.4.900.v20251108-0407.jar",
+      "bundles/org.eclipse.equinox.p2.touchpoint.natives_1.5.800.v20251111-0726.jar",
+      "bundles/org.eclipse.equinox.p2.transport.ecf_1.4.600.v20251124-1504.jar",
       "bundles/org.eclipse.equinox.p2.touchpoint.eclipse_2.4.600.v20250722-0413.jar",
       "bundles/org.eclipse.pde.build_3.12.700.v20250128-1446.jar",
       "bundles/org.eclipse.pde.core_3.21.100.v20251118-2241.jar",
@@ -62,7 +81,7 @@
       "bundles/org.sat4j.pb_2.3.6.v20201214.jar",
       "bundles/org.tukaani.xz_1.11.0.jar",
       "bundles/slf4j.nop_1.7.36.jar",
-      "bundles/com.github.cabutchei.jdtls.pde.buildsupport-0.1.0.alpha.jar"
+      "bundles/com.github.cabutchei.jdtls.pde.buildsupport-0.2.0.alpha.jar"
     ]
   },
   "scripts": {
